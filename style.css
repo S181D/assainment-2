@@ -1,0 +1,363 @@
+/* ------------------------------------
+               fonts
+-------------------------------------- */
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* -------------------------------------------------
+              header & navigation part
+-------------------------------------------------- */
+
+.header {
+    background-color: #ff8f0e1e;
+}
+
+.nav-container {
+    /* background-color: rgba(255, 143, 14, 0.192); */
+    justify-content: space-between;
+    /* width: 100%;
+    height: 1200px; */
+}
+
+nav {
+    display: flex;
+}
+
+.nav-title {
+    font-size: 55px;
+    padding-left: 228px;
+    margin-top: 53px;
+
+}
+
+nav ul {
+    display: flex;
+}
+
+.nav-options {
+    margin-right: 240px;
+    font-weight: 500;
+}
+
+
+
+nav ul li {
+    font-size: 19px;
+    list-style: none;
+    margin-left: 60px;
+    margin-top: 60px;
+}
+
+
+/* -------------------------------
+             div part
+    ---------------------------------- */
+
+.div-container {
+    text-align: center;
+}
+
+.div-title {
+    font-weight: 700;
+    font-size: 60px;
+}
+
+.div-article {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/* -------------------------------
+         button part
+-------------------------------- */
+
+.btn {
+    position: absolute;
+    left: 886px;
+
+
+}
+
+.btn-primary {
+    background-color: #FF900E;
+    font: bolder;
+    width: 125px;
+    height: 53px;
+    border-radius: 9px;
+    color: azure;
+    font-weight: 800;
+}
+
+/* -------------------------------
+      banner part
+------------------------------ */
+
+
+.banner {
+    text-align: center;
+    margin-top: 90px;
+    height: 720px;
+
+}
+
+/* -----------------------------------
+            main part
+-------------------------------------- */
+
+.team-work {
+    display: grid;
+    grid-template-columns: repeat(2, 0.02fr);
+    padding-top: 43px;
+    margin-left: 450px;
+
+}
+
+.teams {
+    margin-left: 5px;
+    padding: 3px;
+    border-radius: 4px;
+
+}
+
+.team-work .teams img {
+    width: 242px;
+    height: 242px;
+}
+
+/* -----------------------------------
+         features part
+------------------------------------ */
+
+
+.features {
+    position: absolute;
+    width: 537px;
+    height: 304px;
+    /* margin-left: 70px; */
+    margin-left: 999px;
+    top: 1385px;
+    font-size: 30px;
+}
+
+.text-primary {
+    font-size: 30px;
+    color: #FF900E;
+
+}
+
+.features-description {
+    font-size: 13px;
+}
+
+
+/* ---------------------------------
+            enjoy part
+------------------------------------ */
+
+.about-us {
+    display: flex;
+    margin-left: 77px;
+    padding-top: 120px;
+
+}
+
+.about-us p {
+    font-size: 13px;
+}
+
+.about-us-containers {
+    margin-left: 350px;
+}
+
+.box {
+    background-color: rgb(248, 245, 245);
+}
+
+
+
+.img {
+    display: flex;
+    max-height: 725px;
+    width: 8px;
+    border-radius: 7px;
+    margin-left: 90px;
+}
+
+/* ---------------------------------
+            some facts
+---------------------------------- */
+
+
+.facts {
+    padding-top: 110px;
+    margin-left: 420px;
+}
+
+.facts-title {
+    font-size: 25px;
+}
+
+.facts-description {
+    font-size: 12px;
+}
+
+.info {
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------
+            foooter
+------------------------------------------------- */
+
+.footer {
+    text-align: center;
+}
+
+.sponspor {
+    padding: 30px;
+}
+
+.sponspor-title {
+    font-size: 30px;
+}
+
+.sponspor-description {
+    font-size: 13px;
+}
+
+
+
+.pic {
+    color: rgba(252, 252, 252, 0);
+    display: flex;
+    justify-content: space-around;
+}
+
+.copyrights {
+    margin-top: 70px;
+    font-size: 16px;
+    /* text-align: center; */
+    background: #FFF4E7;
+    /* height: 80px;
+    width:620px; */
+}
+
+
+
+
+
+
+
+
+
+    /* ----------------------------------------------
+             media quiries
+----------------------------------------------------- */
+
+
+    /* ------------------------
+   mobile devices
+
+
+--------------------- */
+
+    @media only screen and (max-width:420px) {
+
+        .header {
+            width: 100%;
+        }
+
+        .nav-container {
+            flex-direction: column;
+            flex-wrap: wrap;
+
+        }
+
+        nav {
+            display: grid;
+            grid-template-columns: (2, 1fr);
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .btn {
+            position: static;
+            padding-left: 90px;
+        }
+
+        .nav-container {
+            width: 100%;
+
+        }
+
+        .nav-title {
+            padding-left: 0;
+            font-size: 40px;
+        }
+
+        .nav-options {
+            flex-direction: column;
+        }
+
+        .banner img {
+            width: 100%;
+        }
+
+        .features {
+            margin-left: 0;
+
+        }
+
+        .team-work {
+            margin: 0;
+            padding: 0;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .about-us {
+            margin: 0;
+            padding: 0;
+            display: grid;
+        }
+
+        .about-us-containers {
+            margin: 0;
+
+        }
+
+        .img {
+            margin: 0;
+        }
+
+        .about-us img {
+
+            width: 500px;
+            height: 450px;
+        }
+
+        .facts {
+            margin: 0;
+        }
+
+        .pic {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+
+        }
+    }
